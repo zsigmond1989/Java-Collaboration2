@@ -1,6 +1,10 @@
 package hu.ninedevs.pn;
 
 /**
+ * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
+ *
+ * Az osztályt az alábbiak szerint implementáld:
+ *
     - tartson nyilván egy PlateNumber[] tömböt, (kiadottRendszamok néven) amiben eltárolja a már kiadott rendszámokat;
     - legyen egy require() nevű példánymetódusa, amelyen igényelni lehet egy új, még nem létező rendszámot;
     - a require() visszatérési értéke PlateNumber legyen;

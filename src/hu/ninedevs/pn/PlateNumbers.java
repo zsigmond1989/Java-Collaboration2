@@ -2,6 +2,8 @@ package hu.ninedevs.pn;
 
 
 /**
+ * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
+ *
  * TEAM MUNKA 3 fős fejlesztői csoportokban.
  *
  * Team 1:
@@ -42,8 +44,12 @@ package hu.ninedevs.pn;
  */
 
 /**
- * - ebben az osztályban írd meg a program belépési pontját;
- * - igényelj 5 rendszámot az Issuer-től és írasd ki őket;
+ * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
+ *
+ * Az osztályt az alábbiak szerint implementáld:
+ *
+ *  - itt írd meg a program belépési pontját;
+ *  - igényelj 5 rendszámot az Issuer-től és írasd ki őket;
  */
 public class PlateNumbers {
 }
