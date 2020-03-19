@@ -25,7 +25,7 @@ package hu.ninedevs.pn;
  * A PROJEKT: Rendszám generálás (PlateNumbers.java)
  * Írj olyan programot, amely szabályos magyar gépjármű rendszámokat generál (3 betű, kötőjel, 3 szám)!
  * A programot OOP szemlélettel írd meg, a következő komponensek (osztályok) alkalmazásával:
- * - hu.ninedevs.pn.Issuer:
+ * - hu.ninedevs.pn.Issuer
  * - hu.ninedevs.pn.Generator
  * - hu.ninedevs.pn.model.PlateNumber
  * - hu.ninedevs.pn.PlateNumbers
