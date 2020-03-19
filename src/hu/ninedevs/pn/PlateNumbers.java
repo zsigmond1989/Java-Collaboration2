@@ -16,8 +16,9 @@ package hu.ninedevs.pn;
  *      - Levente (dev2)
  *      - Kálmán (dev3, lead developer)
  *
- * A csoport lead developer-e forkolja és klónozza a repository-t, majd hívja meg a másik két csapattagot kollaborációra
- * A másik két fejlesztő klónozza a forkolt repót.
+ * A csoport lead developer-e forkolja és klónozza a repository-t, és ellenőrizze, hogy a saját neve alatt létrejött-e a GitHub-on a másolat.
+ * A lead developer hívja meg a másik két csapattagot kollaborációra a saját neve alatt létrejött másolathoz. Ezen a másolaton fog dolgozni a csapat.
+ * Mindhárman klónozzák a forkolt repót.
  * Az eredeti repót (zsoltkiss/Java-Collaboration2) SENKI NE KLÓNOZZA!
  * Segítsétek a lead developer munkáját, de ha bármiről dönteni kell, ő dönt!
  *
