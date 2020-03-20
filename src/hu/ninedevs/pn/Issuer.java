@@ -38,4 +38,11 @@ public class Issuer {
         }
         return returnVal;
     }
+
+    public Issuer( PlateNumber[] kiadottak ){
+        this.kiadottRendszamok = kiadottak;
+    }
+
+    public Issuer(){
+    }
 }
