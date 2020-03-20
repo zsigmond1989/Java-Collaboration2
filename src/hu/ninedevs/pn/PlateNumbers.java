@@ -92,10 +92,11 @@ import java.io.IOException;
  *  - igényelj 5 rendszámot az Issuer-től és írasd ki őket;
  */
 public class PlateNumbers {
+
+
     public static void main(String[] args) {
         Issuer b = new Issuer();
         for (int i = 0; i < 5; i++) {
-
             System.out.println((i+1) + ". " +b.require().toString());
         }
 
@@ -104,6 +105,26 @@ public class PlateNumbers {
     static void appendPlateNumber(PlateNumber pn) throws IOException {
         File f = new File("src/rendszam.txt");
         FileWriter fw = new FileWriter(f,true);
+        fw.append( )
 
     }
+
+    /*
+    public static void main(String[] args) {
+        appendPlateNumber();
+
+    }
+    static void appendPlateNumber() throws IOException {
+        File f = new File("src/rendszam.txt");
+        Issuer b = new Issuer();
+        for (int i = 0; i < 5; i++) {
+            plateNumber x = b.require();
+            System.out.println((i+1) + ". " +x.toString());
+            FileWriter fw = new FileWriter(f,true);
+            fw.append( x.toString );
+        }
+
+    }
+
+     */
 }
