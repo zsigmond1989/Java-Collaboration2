@@ -106,7 +106,7 @@ public class PlateNumbers {
 
     }
     static void appendPlateNumber(PlateNumber[] pn) throws IOException {
-        File f = new File("src/rendszam.txt");
+        File f = new File("rendszam.txt");
         FileWriter fw = new FileWriter(f,true);
         PrintWriter pw = new PrintWriter(fw);
         Issuer b = new Issuer(pn);

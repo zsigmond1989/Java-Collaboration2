@@ -44,7 +44,7 @@ public class PlateNumber {
         PlateNumber[] beolvasottRendszamok = new PlateNumber[100];
         int i = 0;
         try {
-            br = new BufferedReader(new FileReader(new File("rendszamok.txt")));
+            br = new BufferedReader(new FileReader(new File("rendszam.txt")));
             String line;
 
             while((line = br.readLine()) != null) {
