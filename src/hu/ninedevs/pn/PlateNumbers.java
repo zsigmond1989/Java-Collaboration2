@@ -95,14 +95,19 @@ public class PlateNumbers {
 
 
     public static void main(String[] args) {
-
+        PlateNumber[] test = PlateNumber.reader();
+        try {
+            appendPlateNumber(test);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
-    static void appendPlateNumber(PlateNumber pn) throws IOException {
+    static void appendPlateNumber(PlateNumber[] pn) throws IOException {
         File f = new File("src/rendszam.txt");
         FileWriter fw = new FileWriter(f,true);
-        Issuer b = new Issuer();
+        Issuer b = new Issuer(pn);
         for (int i = 0; i < 5; i++) {
             PlateNumber newPlateNumber = b.require();
             fw.append(newPlateNumber.toString());

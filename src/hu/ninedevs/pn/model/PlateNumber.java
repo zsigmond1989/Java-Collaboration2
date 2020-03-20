@@ -39,7 +39,7 @@ public class PlateNumber {
         return full;
     }
 
-    static PlateNumber[] reader() {
+    public static PlateNumber[] reader() {
         BufferedReader br = null;
         PlateNumber[] beolvasottRendszamok = new PlateNumber[100];
         int i = 0;
