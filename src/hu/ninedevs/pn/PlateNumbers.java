@@ -100,6 +100,7 @@ public class PlateNumbers {
         try {
             appendPlateNumber(test);
         } catch (IOException e) {
+
             e.printStackTrace();
         }
 
