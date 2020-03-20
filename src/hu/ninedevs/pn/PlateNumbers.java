@@ -93,17 +93,18 @@ import java.io.IOException;
  */
 public class PlateNumbers {
     public static void main(String[] args) {
-        Issuer b = new Issuer();
-        for (int i = 0; i < 5; i++) {
-
-            System.out.println((i+1) + ". " +b.require().toString());
-        }
-
+        PlateNumber a = new PlateNumber("ABC","123");
 
     }
     static void appendPlateNumber(PlateNumber pn) throws IOException {
         File f = new File("src/rendszam.txt");
         FileWriter fw = new FileWriter(f,true);
+        Issuer b = new Issuer();
+        for (int i = 0; i < 5; i++) {
+            fw.append(b.require().toString());
+            System.out.println((i+1) + ". " +b.require().toString());
+        }
+
 
     }
 }
