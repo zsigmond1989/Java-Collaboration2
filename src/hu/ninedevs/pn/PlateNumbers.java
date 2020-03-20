@@ -44,6 +44,8 @@ package hu.ninedevs.pn;
  *      A kezdéstől számított 1 óra.
  */
 
+import hu.ninedevs.pn.model.PlateNumber;
+
 /**
  * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
  *
@@ -53,4 +55,12 @@ package hu.ninedevs.pn;
  *  - igényelj 5 rendszámot az Issuer-től és írasd ki őket;
  */
 public class PlateNumbers {
+    public static void main(String[] args) {
+        PlateNumber a = new PlateNumber("ABC","123");
+        String b;
+        b=a.getFullPlateNumber();
+        System.out.println(b);
+
+
+    }
 }
