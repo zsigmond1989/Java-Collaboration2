@@ -29,4 +29,10 @@ public class Generator {
 
             return new String[]{letterPart.toString(), numberPart.toString()};
         }
+        //teszt:
+        public static void main(String[] args) {
+            String[] pnParts;
+            pnParts = getPlateNumber();
+            System.out.println(pnParts[0]+'-'+pnParts[1]);
+        }
 }
