@@ -109,22 +109,5 @@ public class PlateNumbers {
 
     }
 
-    /*
-    public static void main(String[] args) {
-        appendPlateNumber();
 
-    }
-    static void appendPlateNumber() throws IOException {
-        File f = new File("src/rendszam.txt");
-        Issuer b = new Issuer();
-        for (int i = 0; i < 5; i++) {
-            plateNumber x = b.require();
-            System.out.println((i+1) + ". " +x.toString());
-            FileWriter fw = new FileWriter(f,true);
-            fw.append( x.toString );
-        }
-
-    }
-
-     */
 }
