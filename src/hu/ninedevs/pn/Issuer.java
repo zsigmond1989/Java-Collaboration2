@@ -20,7 +20,8 @@ public class Issuer {
 
     public PlateNumber require(){
         PlateNumber returnVal = null;
-        //returnVal = returnVal.Generator();
+        String[] newNum = Generator.getPlateNumber();
+        returnVal = new PlateNumber(newNum[0],newNum[1]);
         return returnVal;
     }
 }
