@@ -34,7 +34,7 @@ public class Issuer {
             kiadottRendszamok[maxNumbers]=returnVal;
         }
         else {
-            require();
+            returnVal = require();
         }
         return returnVal;
     }
