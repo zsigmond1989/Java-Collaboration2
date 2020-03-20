@@ -43,7 +43,12 @@ public class PlateNumber {
         BufferedReader br = null;
         PlateNumber[] beolvasottRendszamok = new PlateNumber[100];
         int i = 0;
+        File f = null;
         try {
+            f = new File("remdszam.txt");
+            if (!f.exists()){
+                return null;
+            }
             br = new BufferedReader(new FileReader(new File("rendszam.txt")));
             String line;
 
@@ -60,7 +65,9 @@ public class PlateNumber {
             ioe.printStackTrace();
         } finally {
             try {
-                br.close();
+                if (f.exists()){
+                    br.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
