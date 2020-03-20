@@ -11,4 +11,8 @@ package hu.ninedevs.pn;
  * - ennek az osztálynak nem kell törődnie azzal, hogy a generált kombinációk fel lettek-e már használva kiadott rendszámokban
  */
 public class Generator {
+        public static String[] getPlateNumber(){
+
+            return new String[]{"",""};
+        }
 }
