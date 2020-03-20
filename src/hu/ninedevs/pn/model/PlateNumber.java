@@ -1,5 +1,10 @@
 package hu.ninedevs.pn.model;
 
+import hu.ninedevs.pn.Issuer;
+import hu.ninedevs.pn.PlateNumbers;
+
+import java.io.*;
+
 /**
  * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
  *
@@ -32,5 +37,35 @@ public class PlateNumber {
         full+=numberPart;
 
         return full;
+    }
+
+    static void reader() {
+        BufferedReader br = null;
+        PlateNumber[] beolvasottRendszamok = new PlateNumber[100];
+        int i = 0;
+        try {
+            br = new BufferedReader(new FileReader(new File("rendszamok.txt")));
+            String line;
+
+            while((line = br.readLine()) != null) {
+                String[] oneNumber = new String[2];
+                oneNumber = line.split("-");
+                beolvasottRendszamok[i]= new PlateNumber(oneNumber[0],oneNumber[1]);
+                i++;
+            }
+
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
     }
 }
