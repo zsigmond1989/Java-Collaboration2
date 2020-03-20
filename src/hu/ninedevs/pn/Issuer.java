@@ -17,11 +17,25 @@ import hu.ninedevs.pn.model.PlateNumber;
  */
 public class Issuer {
     public PlateNumber[] kiadottRendszamok = new PlateNumber[100];
+    public int maxNumbers = 0;
 
     public PlateNumber require(){
         PlateNumber returnVal = null;
         String[] newNum = Generator.getPlateNumber();
         returnVal = new PlateNumber(newNum[0],newNum[1]);
+        boolean voltmar = false;
+        for (int i = 0; i < maxNumbers; i++){
+            if (returnVal.equals(kiadottRendszamok[i])) {
+                voltmar = true;
+            }
+        }
+        if (!voltmar){
+            maxNumbers++;
+            kiadottRendszamok[maxNumbers]=returnVal;
+        }
+        else {
+            require();
+        }
         return returnVal;
     }
 }
