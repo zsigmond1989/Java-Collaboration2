@@ -65,6 +65,12 @@ package hu.ninedevs.pn;
  *          static void appendPlateNumber(PlateNumber pn) {...}
  */
 
+import hu.ninedevs.pn.model.PlateNumber;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * Csapatok:
  *
@@ -93,6 +99,11 @@ public class PlateNumbers {
             System.out.println((i+1) + ". " +b.require().toString());
         }
 
+
+    }
+    static void appendPlateNumber(PlateNumber pn) throws IOException {
+        File f = new File("src/rendszam.txt");
+        FileWriter fw = new FileWriter(f,true);
 
     }
 }
