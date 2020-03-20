@@ -10,9 +10,23 @@ package hu.ninedevs.pn;
  * - véletlenszerű számot és betűkombinációt generáljon minden meghívásra
  * - ennek az osztálynak nem kell törődnie azzal, hogy a generált kombinációk fel lettek-e már használva kiadott rendszámokban
  */
+
+import java.util.Random;
+
 public class Generator {
         public static String[] getPlateNumber(){
+            StringBuilder letterPart= new StringBuilder();
+            StringBuilder numberPart= new StringBuilder();
+            char c ;
+            Random r = new Random();
 
-            return new String[]{"",""};
+            for(int i = 0; i<3; i++){
+                c = (char)(r.nextInt( ('Z'-'A')+1 )+'A');
+                letterPart.append(c);
+                c = (char)(r.nextInt( ('9'-'0')+1 )+'0');
+                numberPart.append(c);
+            }
+
+            return new String[]{letterPart.toString(), numberPart.toString()};
         }
 }
