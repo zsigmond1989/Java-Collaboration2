@@ -56,9 +56,10 @@ import hu.ninedevs.pn.model.PlateNumber;
  */
 public class PlateNumbers {
     public static void main(String[] args) {
+        Issuer b= new Issuer();
         for (int i=0;i<5;i++){
-            Issuer b= new Issuer();
-            System.out.println(b.toString());
+
+            System.out.println(b.require().getFullPlateNumber());
         }
 
 
