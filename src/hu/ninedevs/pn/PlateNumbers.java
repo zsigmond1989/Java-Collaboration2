@@ -112,7 +112,7 @@ public class PlateNumbers {
         Issuer b = new Issuer(pn);
         for (int i = 0; i < 5; i++) {
             PlateNumber newPlateNumber = b.require();
-            pw.print(newPlateNumber.toString());
+            pw.println(newPlateNumber.toString());
             System.out.println((i+1) + ". " +newPlateNumber.toString());
         }
 
