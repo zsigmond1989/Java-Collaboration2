@@ -56,10 +56,11 @@ import hu.ninedevs.pn.model.PlateNumber;
  */
 public class PlateNumbers {
     public static void main(String[] args) {
-        PlateNumber a = new PlateNumber("ABC","123");
-        String b;
-        b=a.getFullPlateNumber();
-        System.out.println(b);
+        for (int i=0;i<5;i++){
+            Issuer b= new Issuer();
+            System.out.println(b.toString());
+        }
+
 
 
     }
