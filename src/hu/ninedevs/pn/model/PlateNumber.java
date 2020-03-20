@@ -18,9 +18,7 @@ public class PlateNumber {
 
     @Override
     public String toString() {
-        return "Rendszám:" +
-                letterPart + "-"+
-                 numberPart ;
+        return "Rendszám: " + getFullPlateNumber();
     }
 
     public PlateNumber (String letters, String numbers){

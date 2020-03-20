@@ -57,7 +57,7 @@ public class PlateNumbers {
         Issuer b= new Issuer();
         for (int i=0;i<5;i++){
 
-            System.out.println(b.require().getFullPlateNumber());
+            System.out.println((i+1) + ". " +b.require().toString());
         }
 
 
