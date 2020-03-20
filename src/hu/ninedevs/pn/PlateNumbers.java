@@ -70,6 +70,7 @@ import hu.ninedevs.pn.model.PlateNumber;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Csapatok:
@@ -107,10 +108,11 @@ public class PlateNumbers {
     static void appendPlateNumber(PlateNumber[] pn) throws IOException {
         File f = new File("src/rendszam.txt");
         FileWriter fw = new FileWriter(f,true);
+        PrintWriter pw = new PrintWriter(fw);
         Issuer b = new Issuer(pn);
         for (int i = 0; i < 5; i++) {
             PlateNumber newPlateNumber = b.require();
-            fw.append(newPlateNumber.toString());
+            pw.print(newPlateNumber.toString());
             System.out.println((i+1) + ". " +newPlateNumber.toString());
         }
 
