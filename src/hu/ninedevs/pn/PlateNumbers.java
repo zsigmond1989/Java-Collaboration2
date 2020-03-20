@@ -44,8 +44,6 @@ package hu.ninedevs.pn;
  *      A kezdéstől számított 1 óra.
  */
 
-import hu.ninedevs.pn.model.PlateNumber;
-
 /**
  * FONTOS! Ezt a leírást NE MÓDOSÍTSD, NE TÖRÖLD KI semmilyen részletét a munka során!
  *
